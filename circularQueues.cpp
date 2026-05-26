@@ -18,3 +18,13 @@ public:
         cout << "Enter a number: ";
         cin >> num;
         cout << endl;
+
+        //cek antrian penuh ga
+        if ((FRONT == 0 && REAR == max - 1) || (FRONT == REAR + 1))
+        {
+            cout << "\nQueue overflow\n" << endl;
+            return;
+        }
+
+        //cek apakah antrian kosong
+        if (FRONT == -1)
