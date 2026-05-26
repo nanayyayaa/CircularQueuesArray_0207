@@ -129,3 +129,11 @@ int main() {
             cout << "Enter your choice (1-4): ";
             cin >> ch;
             cout << endl;
+
+            switch (ch)
+            {
+            case '1':
+            {
+                q.insert();
+                break;
+            }
